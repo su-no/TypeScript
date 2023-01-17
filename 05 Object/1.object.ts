@@ -29,7 +29,7 @@ function randomCoordinate(point: { x: number; y: number }): {
 // 객체 리터럴을 전달하면 사전에 정의된 프로퍼티만 사용할 수 있다.
 printName({ name: 'doosigi', age: 0.3, breed: 'special' });
 
-// 객체 참조를 전달하면 객체 안에 필수 프로퍼티가 있는지만 검사하고, 나머지는 무시된다.
+// ! 객체 참조를 전달하면 객체 안에 필수 프로퍼티가 있는지만 검사하고, 나머지는 무시된다.
 const dog2 = {
   name: 'doosigi',
   age: 0.3,

@@ -28,3 +28,5 @@ const doodoo: ServiceDog = {
   bark: () => 'woof woof',
   job: 'drug sniffing',
 };
+
+export {};

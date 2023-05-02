@@ -24,3 +24,5 @@ const person: Person2 = {
   name: 'Thomas',
   age: 30,
 };
+
+export {};

@@ -22,3 +22,5 @@ const ariana: Engineer = {
   level: 'senior',
   languages: ['javascript', 'typescript'],
 };
+
+export {};

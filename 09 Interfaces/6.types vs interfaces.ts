@@ -19,3 +19,5 @@ interface Chicken {
 interface SpecialChicken extends Chicken {
   fly(): void;
 }
+
+export {};

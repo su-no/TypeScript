@@ -21,3 +21,5 @@ type Loc = {
 };
 
 const coords: (Point | Loc)[] = [];
+
+export {};

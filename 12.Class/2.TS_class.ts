@@ -1,3 +1,6 @@
+// * TypeScript Class
+// public, private, protected 접근 제한자
+
 class Player {
   // * Public/Private property
   // 기본적으로 public이라서 생략 가능
@@ -6,6 +9,8 @@ class Player {
   // private은 TypeScript이므로 컴파일 전에만 체크
   // #은 JavaScript이므로 런타임에서도 체크
   private _score: number = 0;
+  // protected는 자식 클래스에서 접근 가능
+  protected _type = 'Player';
 
   // Paramter Property 단축 구문
   constructor(public first: string, public last: string) {}
@@ -31,5 +36,16 @@ class Player {
   }
 }
 
+class SuperPlayer extends Player {
+  public isAdmin: boolean = true;
+
+  changeType(): void {
+    // this._score = 11; // private이므로 접근 불가
+    this._type = 'SuperPlayer'; // protected이므로 접근 가능
+  }
+}
+
 const player1 = new Player('Marta', 'Stewart');
 const player2 = new Player('Tiger', 'Woods');
+
+const superPlayer = new SuperPlayer('Marta', 'Stewart');

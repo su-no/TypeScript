@@ -20,3 +20,5 @@ class Jacket implements colorFul, Printable {
 
 const bike1 = new Bike('red');
 const jacket1 = new Jacket('prada', 'black');
+
+export {};

@@ -49,3 +49,5 @@ const player1 = new Player('Marta', 'Stewart');
 const player2 = new Player('Tiger', 'Woods');
 
 const superPlayer = new SuperPlayer('Marta', 'Stewart');
+
+export {};
